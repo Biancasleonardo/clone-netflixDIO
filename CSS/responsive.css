@@ -1,0 +1,51 @@
+@media screen and (max-width: 700px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-principal{
+        margin: 10px 0;
+        font-size: 15px;
+    }
+
+    .filme-principal .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filme-principal{
+        height: 450px;
+        background-size:cover;
+    }
+
+    .botao{
+        margin-top: 5px;
+        width: 190px;
+    }
+
+    .carrosel-filmes{
+        /* display: flex;
+        height: 400px; */
+        margin-top: -40px;
+    }
+
+    .carrosel-filmes p{
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .carrosel-filmes2 p{
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .filme-principal .container{
+        width: 40%;
+    }
+}
