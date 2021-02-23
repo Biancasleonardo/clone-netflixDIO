@@ -11,30 +11,31 @@
 }
 
 body{
-    background-color: var(--preto);
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
 }
-
-/* header .logo{
-    color: var(--vermelho);
-    font-size: 40px;
-} */
 
 .logo img{
     width: 100px;
 }
 
-header .container{
-    margin: 20px 30px 20px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-.menu-principal a{
+.nav-item a{
     color: white;
     margin-right: 10px;
+}
+
+.nav-item span i{
+    color: white;
+}
+
+.foto-menu{
+    width: 35px;
+    border-radius: 5px;
+}
+
+.menu-principal{
+    background-color: rgba(0, 0, 0, 0.397);
+    padding: 0 40px;
 }
 
 .menu-principal a:hover{
@@ -43,7 +44,14 @@ header .container{
 
 /* Filme princial */
 
+
+
 .filme-principal{
+    background-image: url(/img/capa-smallville.jpg);
+    height: 600px;
+}
+
+/* .filme-principal{
     font-size: 18px;
     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/capa-smallville.jpg'), no-repeat;
     background-size:cover;
@@ -52,6 +60,11 @@ header .container{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+} */
+
+.conteudo-filme-principal{
+    color: white;
+    padding-top: 20%;
 }
 
 .filme-principal .container{
@@ -68,14 +81,15 @@ header .container{
     font-size: 50px;
 }
 
-.botao{
-    background-color: rgba(0, 0, 0, .50);
+.botao-assistir{
+    background-color: rgb(255, 255, 255);
     border: none;
-    color: white;
-    padding: 15px;
-    margin-right: 15px;
-    font-size: 12px;
-    border: 1px solid gray;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-right: 08px;
 
     /* cursor */
     cursor:pointer;
@@ -84,13 +98,38 @@ header .container{
     transition: .3s ease all;
 }
 
-.botao:hover{
-    background-color: white;
+.botao-assistir:hover{
+    background-color: rgb(209, 204, 204);
     color: black;
 }
 
-.botao i{
+.botao-assistir i{
     margin-right: 8px;
+}
+
+.botao-mais-informacoes{
+    background-color: #6D6D6EB3;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 30px;
+
+    /* cursor */
+    cursor:pointer;
+
+    /* Transição */
+    transition: .3s ease all;
+}
+
+.botao-mais-informacoes:hover{
+    background-color: #6d6d6e75;
+    color: white;
+}
+
+.botao-mais-informacoes i{
+    margin-right: 08px;
 }
 
 /* Own-Carousel */
@@ -118,4 +157,8 @@ header .container{
     height: 100%;
     width: 100%;
     display: block;
+}
+
+.border{
+    border: 1px red solid;
 }
